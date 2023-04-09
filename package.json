@@ -1,5 +1,5 @@
 {
-    "name": "serbian-validators",
+    "name": "better-strip-bom",
     "version": "1.0.0",
     "license": "GPL-3.0",
     "private": false,
@@ -15,9 +15,9 @@
     ],
     "repository": {
       "type": "git",
-      "url": "https://github.com/oblakstudio/serbian-validators.git"
+      "url": "https://github.com/oblakstudio/better-strip-bom.git"
     },
-    "bugs": "https://github.com/oblakstudio/serbian-validators/issues",
+    "bugs": "https://github.com/oblakstudio/better-strip-bom/issues",
     "keywords": [],
     "scripts": {
       "build": "rimraf dist && tsc",
@@ -27,11 +27,11 @@
       "test": "jest",
       "test:watch": "jest --watch",
       "test:cov": "jest --coverage",
-      "release:test": "node ./node_modules/semantic-release/bin/semantic-release.js --dry-run",
-      "release": "node ./node_modules/semantic-release/bin/semantic-release.js"
+      "release:test": "semantic-release --dry-run",
+      "release": "semantic-release"
     },
     "engines": {
-      "node": ">= 14"
+      "node": ">= 16"
     },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
